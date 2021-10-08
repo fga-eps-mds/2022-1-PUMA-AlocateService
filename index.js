@@ -1,7 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const db = require('./dbconfig/dbConfig')
+const environment = require('./config/environment');
 
+environment.configEnv();
 var app = express()
 app.use(cors())
 
