@@ -21,11 +21,8 @@ routes.get('/alocate/palavras-chave', (req, res) => {
 routes.post('/alocate', (req, res) => {
   const { body } = req;
   alocateController.getSubject(body).then((response) => {
-    console.log('sucesso');
-    console.log(response);
     res.status(200).json(response);
   }).catch((error) => {
-    console.log(error);
     res.status(400).json({ error });
   });
 });
