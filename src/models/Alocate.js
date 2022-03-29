@@ -1,1 +1,1 @@
-// Notify model
+// Alocate model
